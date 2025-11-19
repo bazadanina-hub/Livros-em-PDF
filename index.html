@@ -55,7 +55,7 @@
  <body>
   <div id="app" class="min-h-full"><!-- Hero Section -->
    <header class="text-center px-6 py-16" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-    <h1 id="main-title" class="text-5xl font-bold text-white mb-4">Transforme Seu Conhecimento</h1>
+    <h1 id="main-title" class="text-5xl font-bold text-white mb-4">BIBLIOTECA VIRTUAL - TELEGRAM</h1>
     <p id="subtitle" class="text-xl text-white opacity-90 mb-8">PDFs exclusivos para seu crescimento pessoal e profissional</p>
    </header><!-- Video Section -->
    <section class="max-w-4xl mx-auto px-6 py-12">
@@ -74,8 +74,8 @@
        </svg>
       </div>
       <div class="p-6">
-       <h3 id="book1-title" class="text-2xl font-bold mb-2" style="color: #1f2937;">Guia Completo</h3>
-       <p id="book1-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 29,90</p><button class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white" style="background-color: #dc2626;"> Comprar Agora </button>
+       <h3 id="book1-title" class="text-2xl font-bold mb-2" style="color: #1f2937;">Romance</h3>
+       <p id="book1-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 4,99</p><a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" target="_blank" rel="noopener noreferrer" class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white block text-center" style="background-color: #dc2626; text-decoration: none;"> Acesse Agora </a>
       </div>
      </div><!-- Book 2 -->
      <div class="book-card bg-white rounded-xl shadow-lg overflow-hidden">
@@ -84,8 +84,8 @@
        </svg>
       </div>
       <div class="p-6">
-       <h3 id="book2-title" class="text-2xl font-bold mb-2" style="color: #1f2937;">Manual Avançado</h3>
-       <p id="book2-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 39,90</p><button class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white" style="background-color: #dc2626;"> Comprar Agora </button>
+       <h3 id="book2-title" class="text-2xl font-bold mb-2" style="color: #1f2937;">Lei da Atração</h3>
+       <p id="book2-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 4,99</p><a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" target="_blank" rel="noopener noreferrer" class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white block text-center" style="background-color: #dc2626; text-decoration: none;"> Acesse Agora </a>
       </div>
      </div><!-- Book 3 -->
      <div class="book-card bg-white rounded-xl shadow-lg overflow-hidden">
@@ -94,8 +94,8 @@
        </svg>
       </div>
       <div class="p-6">
-       <h3 id="book3-title" class="text-2xl font-bold mb-2" style="color: #1f2937;">Edição Premium</h3>
-       <p id="book3-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 49,90</p><button class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white" style="background-color: #dc2626;"> Comprar Agora </button>
+       <h3 id="book3-title" class="text-2xl font-bold mb-2 text-red-600">MUITO MAIS</h3>
+       <p id="book3-price" class="text-3xl font-bold mb-4" style="color: #dc2626;">R$ 4,99</p><a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" target="_blank" rel="noopener noreferrer" class="cta-button w-full py-3 px-6 rounded-lg font-semibold text-white block text-center" style="background-color: #dc2626; text-decoration: none;"> Acesse Agora </a>
       </div>
      </div>
     </div>
@@ -113,16 +113,16 @@
       secondary_action_color: "#764ba2",
       font_family: "Inter",
       font_size: 16,
-      main_title: "Transforme Seu Conhecimento",
+      main_title: "BIBLIOTECA VIRTUAL - TELEGRAM",
       subtitle: "PDFs exclusivos para seu crescimento pessoal e profissional",
-      video_url: "",
-      book1_title: "Guia Completo",
-      book1_price: "R$ 29,90",
-      book2_title: "Manual Avançado",
-      book2_price: "R$ 39,90",
-      book3_title: "Edição Premium",
-      book3_price: "R$ 49,90",
-      cta_button_text: "Comprar Agora",
+      video_url: "https://youtube.com/shorts/Cz1SpDf25R8?feature=share",
+      book1_title: "Romance",
+      book1_price: "R$ 4,99",
+      book2_title: "Lei da Atração",
+      book2_price: "R$ 4,99",
+      book3_title: "MUITO MAIS",
+      book3_price: "R$ 4,99",
+      cta_button_text: "Acesse Agora",
       footer_text: "© 2024 - Todos os direitos reservados"
     };
 
@@ -184,9 +184,9 @@
       document.getElementById('book2-price').style.color = priceColor;
       document.getElementById('book2-price').style.fontSize = `${fontSize * 1.875}px`;
       
-      document.getElementById('book3-title').textContent = config.book3_title || defaultConfig.book3_title;
-      document.getElementById('book3-title').style.color = textColor;
-      document.getElementById('book3-title').style.fontSize = `${fontSize * 1.5}px`;
+      const book3Title = document.getElementById('book3-title');
+      book3Title.textContent = config.book3_title || defaultConfig.book3_title;
+      book3Title.style.fontSize = `${fontSize * 1.5}px`;
       
       document.getElementById('book3-price').textContent = config.book3_price || defaultConfig.book3_price;
       document.getElementById('book3-price').style.color = priceColor;
@@ -201,6 +201,7 @@
         button.textContent = ctaText;
         button.style.backgroundColor = buttonColor;
         button.style.fontSize = `${fontSize}px`;
+        button.href = "https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/";
       });
       
       // Footer
@@ -305,5 +306,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a100f36a660a184',t:'MTc2MzU1ODk5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a10736ee349a184',t:'MTc2MzU2MzEwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
