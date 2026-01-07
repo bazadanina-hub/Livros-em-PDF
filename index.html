@@ -1,162 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atividades Pedagógicas</title>
+  <meta charset="UTF-8">
+  <title>LIVROS EM PDF para Baixar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+  <style>
+    body{
+      font-family: Arial;
+      background:#f4f4f4;
+      margin:0;
+    }
 
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
+    header{
+      background:#2b6cb0;
+      color:white;
+      padding:25px;
+      text-align:center;
+    }
 
-    /* plano de fundo infantil */
-    background: linear-gradient(135deg,#a8e8ff,#ffd6f6,#fff3b0);
-    background-attachment: fixed;
-}
+    .descricao-site{
+      max-width:900px;
+      margin:20px auto;
+      background:white;
+      padding:15px;
+      border-radius:10px;
+    }
 
-/* container principal */
-.container{
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    text-align:center;
-}
+    .container{
+      max-width:1000px;
+      margin: auto;
+      padding:10px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:15px;
+    }
 
-/* título principal */
-h1{
-    font-size: 26px;
-    margin-bottom:5px;
-}
+    .card{
+      background:white;
+      border-radius:10px;
+      box-shadow:0 0 8px rgba(0,0,0,0.1);
+      padding:10px;
+      text-align:center;
+    }
 
-/* subtítulo */
-h2{
-    font-size:18px;
-    color:#444;
-}
+    .card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:8px;
+    }
 
-/* grade das apostilas */
-.cards{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-    gap:15px;
-    margin-top:20px;
-}
+    .btn{
+      display:inline-block;
+      padding:10px 15px;
+      background:#2b6cb0;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      margin-top:8px;
+      font-weight:bold;
+    }
 
-/* cada card */
-.card{
-    background:white;
-    padding:10px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-}
-
-/* imagens */
-.card img{
-    width:100%;
-    border-radius:12px;
-}
-
-/* botão acessar */
-.btn{
-    display:block;
-    text-decoration:none;
-    background:#ff7ac4;
-    padding:10px;
-    color:white;
-    font-weight:bold;
-    border-radius:20px;
-    margin-top:8px;
-}
-
-</style>
-
+  </style>
 </head>
+
 <body>
+
+<header>
+  <h1>LIVROS EM PDF para Baixar</h1>
+</header>
+
+<div class="descricao-site">
+  <h3>Descrição do site</h3>
+  <p>
+    <!-- Escreva sua descrição aqui -->
+    Aqui você pode escrever a descrição do site, explicando sobre os livros,
+    acesso ao grupo, pagamentos, condições etc.
+  </p>
+</div>
 
 <div class="container">
 
-<h1>ATIVIDADES PEDAGÓGICAS</h1>
-<h2>Atividades para imprimir</h2>
+  <!-- 1 -->
+  <div class="card">
+    <img src="imagens/livro1.jpg">
+    <h3>Nome do Livro 1</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_1" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<div class="cards">
+  <!-- 2 -->
+  <div class="card">
+    <img src="imagens/livro2.jpg">
+    <h3>Nome do Livro 2</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_2" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 1 -->
-<div class="card">
-<img src="imagens/Folclore.jpg">
-<p>Atividades Folclóricas</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 3 -->
+  <div class="card">
+    <img src="imagens/livro3.jpg">
+    <h3>Nome do Livro 3</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_3" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 2 -->
-<div class="card">
-<img src="imagens/arvore.jpg">
-<p>Dia da Árvore</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 4 -->
+  <div class="card">
+    <img src="imagens/livro4.jpg">
+    <h3>Nome do Livro 4</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_4" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 3 -->
-<div class="card">
-<img src="imagens/animais.jpg">
-<p>Animais Diversos</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 5 -->
+  <div class="card">
+    <img src="imagens/livro5.jpg">
+    <h3>Nome do Livro 5</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_5" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 4 -->
-<div class="card">
-<img src="imagens/meninos.jpg">
-<p>Meninos – Diversos</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 6 -->
+  <div class="card">
+    <img src="imagens/livro6.jpg">
+    <h3>Nome do Livro 6</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_6" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 5 -->
-<div class="card">
-<img src="imagens/meninas.jpg">
-<p>Meninas – Diversos</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 7 -->
+  <div class="card">
+    <img src="imagens/livro7.jpg">
+    <h3>Nome do Livro 7</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_7" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 6 -->
-<div class="card">
-<img src="imagens/meninos-meninas.jpg">
-<p>Menino e Menina</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 8 -->
+  <div class="card">
+    <img src="imagens/livro8.jpg">
+    <h3>Nome do Livro 8</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_8" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 7 -->
-<div class="card">
-<img src="imagens/haloween.jpg">
-<p>Desenhos Halloween</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 9 -->
+  <div class="card">
+    <img src="imagens/livro9.jpg">
+    <h3>Nome do Livro 9</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_9" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 8 -->
-<div class="card">
-<img src="imagens/natal.jpg">
-<p>Desenhos Natalinos</p>
-<a class="btn" href="https://pay.monetizze.com.br/KTM452734">Acessar</a>
-</div>
+  <!-- 10 -->
+  <div class="card">
+    <img src="imagens/livro10.jpg">
+    <h3>Nome do Livro 10</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_10" target="_blank">Comprar / Acessar</a>
+  </div>
 
-<!-- 9 -->
-<div class="card">
-<img src="imagens/todos-kits.jpg">
-<p>Quero todos os kits</p>
-<a class="btn" href="#">Acessar</a>
-</div>
+  <!-- 11 a 20 seguem o mesmo padrão -->
 
-<!-- 10 -->
-<div class="card">
-<img src="imagens/vogais.jpg">
-<p>Conhecendo as Vogais</p>
-<a class="btn" href="https://pay.monetizze.com.br/KHP449136" target="_blank">
-Acesse agora
-</a>
-</div>
+  <!-- 11 -->
+  <div class="card">
+    <img src="imagens/livro11.jpg">
+    <h3>Nome do Livro 11</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_11" target="_blank">Comprar / Acessar</a>
+  </div>
 
-</div>
+  <!-- 12 -->
+  <div class="card">
+    <img src="imagens/livro12.jpg">
+    <h3>Nome do Livro 12</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_12" target="_blank">Comprar / Acessar</a>
+  </div>
 
-</div>
+  <!-- 13 -->
+  <div class="card">
+    <img src="imagens/livro13.jpg">
+    <h3>Nome do Livro 13</h3>
+    <a class="btn" href="LINK_DO_PAGAMENTO_13" target="_blank">Comprar / Acessar</a>
+  </div>
 
-</body>
-</html>
+  <!-- 14 -->
+  <div class="card">
+    <img src="image
