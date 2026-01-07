@@ -2,175 +2,201 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Biblioteca Digital</title>
+<title>LIVROS EM PDF PARA BAIXAR</title>
 
 <style>
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+    font-family: Arial;
+    background:#f4f4f4;
     margin:0;
     padding:0;
 }
+header{
+    background:red;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
 
 .container{
-    width:95%;
-    max-width:1100px;
-    margin:20px auto;
+    width: 90%;
+    margin:auto;
 }
 
-h1{
-    text-align:center;
+/* título categoria */
+h2{
+    background:#222;
+    color:white;
+    padding:10px;
 }
 
-.categoria{
-    background:white;
-    padding:20px;
-    margin-top:20px;
-    border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
-}
-
-.categoria h2{
-    margin-top:0;
-}
-
+/* grade dos livros */
 .grid{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(5,1fr);
     gap:15px;
-    margin-top:15px;
 }
 
+/* card do livro */
 .card{
-    background:#fafafa;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:15px;
-    text-align:center;
-}
-
-.card span{
-    font-size:15px;
-}
-
-.botao{
-    display:inline-block;
-    margin-top:10px;
-    padding:8px 12px;
+    background:white;
+    padding:10px;
     border-radius:8px;
-    text-decoration:none;
-    border:1px solid black;
+    text-align:center;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
 }
 
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+button{
+    padding:8px 10px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
 </style>
+
 </head>
 
 <body>
 
+<header>
+<h1>LIVROS EM PDF PARA BAIXAR</h1>
+<p>Coloque aqui sua descrição do site, explicando como funciona o acesso aos livros.</p>
+</header>
+
 <div class="container">
 
-<h1>📚 Minha Biblioteca Digital</h1>
+<!-- =========================
+      LEI DA ATRAÇÃO
+========================= -->
 
-<!-- ================== LEI DA ATRAÇÃO ================== -->
-<div class="categoria">
-<h2>✨ Lei da Atração</h2>
+<h2>✨ LEI DA ATRAÇÃO</h2>
 
 <div class="grid">
 
-<!-- card especial -->
+<!-- repita trocando imagem e título -->
+
 <div class="card">
-<span><strong>Quero acesso a toda Biblioteca</strong></span><br>
-<a class="botao" href="COLE_AQUI_SEU_LINK">Acessar</a>
+<img src="imagens/lei1.jpg">
+<p>Título do Livro</p>
+<button>Baixar / Comprar</button>
 </div>
 
-<!-- 29 espaços para livros -->
-<!-- basta trocar o nome -->
+<!-- copie e cole esse card e edite -->
+<!-- coloque quantos livros quiser -->
 
-<div class="card"><span>Título 01</span></div>
-<div class="card"><span>Título 02</span></div>
-<div class="card"><span>Título 03</span></div>
-<div class="card"><span>Título 04</span></div>
-<div class="card"><span>Título 05</span></div>
-<div class="card"><span>Título 06</span></div>
-<div class="card"><span>Título 07</span></div>
-<div class="card"><span>Título 08</span></div>
-<div class="card"><span>Título 09</span></div>
-<div class="card"><span>Título 10</span></div>
-<div class="card"><span>Título 11</span></div>
-<div class="card"><span>Título 12</span></div>
-<div class="card"><span>Título 13</span></div>
-<div class="card"><span>Título 14</span></div>
-<div class="card"><span>Título 15</span></div>
-<div class="card"><span>Título 16</span></div>
-<div class="card"><span>Título 17</span></div>
-<div class="card"><span>Título 18</span></div>
-<div class="card"><span>Título 19</span></div>
-<div class="card"><span>Título 20</span></div>
-<div class="card"><span>Título 21</span></div>
-<div class="card"><span>Título 22</span></div>
-<div class="card"><span>Título 23</span></div>
-<div class="card"><span>Título 24</span></div>
-<div class="card"><span>Título 25</span></div>
-<div class="card"><span>Título 26</span></div>
-<div class="card"><span>Título 27</span></div>
-<div class="card"><span>Título 28</span></div>
-<div class="card"><span>Título 29</span></div>
-<div class="card"><span>Título 30</span></div>
-
-</div>
+<!-- CARD ESPECIAL -->
+<div class="card">
+<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+<button>CLIQUE AQUI</button>
 </div>
 
-<!-- ================== ROMANCE ================== -->
-<div class="categoria">
-<h2>❤️ Romance</h2>
+</div>
+
+
+
+<!-- =========================
+      ROMANCE
+========================= -->
+
+<h2>❤️ ROMANCE</h2>
+
 <div class="grid">
 
 <div class="card">
-<span><strong>Quero acesso a toda Biblioteca</strong></span><br>
-<a class="botao" href="COLE_AQUI_SEU_LINK">Acessar</a>
+<img src="imagens/romance1.jpg">
+<p>Título do Romance</p>
+<button>Baixar / Comprar</button>
 </div>
 
-<!-- repete 29 -->
-<!-- troque os títulos -->
-<!-- ... -->
-</div>
-</div>
+<!-- copie e cole mais cards aqui -->
 
-<!-- ================== FICÇÃO ================== -->
-<div class="categoria">
-<h2>🌙 Ficção</h2>
-<div class="grid">
 <div class="card">
-<span><strong>Quero acesso a toda Biblioteca</strong></span><br>
-<a class="botao" href="COLE_AQUI_SEU_LINK">Acessar</a>
-</div>
-<!-- restantes iguais -->
-</div>
+<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+<button>CLIQUE AQUI</button>
 </div>
 
-<!-- ================== DESENVOLVIMENTO PESSOAL ================== -->
-<div class="categoria">
-<h2>🚀 Desenvolvimento Pessoal</h2>
+</div>
+
+
+
+<!-- =========================
+      FICÇÃO
+========================= -->
+
+<h2>🌙 FICÇÃO</h2>
+
 <div class="grid">
+
 <div class="card">
-<span><strong>Quero acesso a toda Biblioteca</strong></span><br>
-<a class="botao" href="COLE_AQUI_SEU_LINK">Acessar</a>
-</div>
-</div>
+<img src="imagens/ficcao1.jpg">
+<p>Título do Livro</p>
+<button>Baixar / Comprar</button>
 </div>
 
-<!-- ================== ESPIRITUALIDADE ================== -->
-<div class="categoria">
-<h2>🌿 Espiritualidade</h2>
+<div class="card">
+<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+<button>CLIQUE AQUI</button>
+</div>
+
+</div>
+
+
+
+<!-- =========================
+      TRILOGIAS
+========================= -->
+
+<h2>📚 TRILOGIAS</h2>
+
 <div class="grid">
+
 <div class="card">
-<span><strong>Quero acesso a toda Biblioteca</strong></span><br>
-<a class="botao" href="COLE_AQUI_SEU_LINK">Acessar</a>
+<img src="imagens/trilogia1.jpg">
+<p>Nome da Trilogia</p>
+<button>Baixar / Comprar</button>
 </div>
-</div>
+
+<div class="card">
+<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+<button>CLIQUE AQUI</button>
 </div>
 
 </div>
+
+
+
+<!-- =========================
+      DIDÁTICOS / EDUCAÇÃO
+========================= -->
+
+<h2>📘 DIDÁTICOS / EDUCAÇÃO</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="imagens/educacao1.jpg">
+<p>Título do Material</p>
+<button>Baixar / Comprar</button>
+</div>
+
+<div class="card">
+<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+<button>CLIQUE AQUI</button>
+</div>
+
+</div>
+
+
+</div>
+
 </body>
 </html>
