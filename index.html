@@ -1,194 +1,261 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Biblioteca</title>
+    <meta charset="UTF-8">
+    <title>Biblioteca Digital</title>
 
-<style>
-body{
-    font-family: Arial;
-    background:#f2f2f2;
-    padding:20px;
-}
+    <style>
+        body{
+            background:#0b0b0b;
+            color:white;
+            font-family: Arial;
+        }
 
-.category, .subcategory{
-    background:white;
-    padding:10px;
-    margin-top:10px;
-    cursor:pointer;
-    font-weight:bold;
-    border-radius:8px;
-    box-shadow:0 0 5px rgba(0,0,0,.2);
-}
+        h1{
+            text-align:center;
+        }
 
-.content, .subcontent{
-    display:none;
-    margin-left:10px;
-}
+        .categoria{
+            background:#141414;
+            padding:20px;
+            margin:20px;
+            border-radius:10px;
+        }
 
-.grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap:15px;
-    margin-top:10px;
-}
+        .autor, .tituloSimples{
+            background:#1f1f1f;
+            padding:15px;
+            margin-top:10px;
+            border-radius:10px;
+        }
 
-.card{
-    background:white;
-    padding:10px;
-    border-radius:10px;
-    box-shadow:0 0 5px rgba(0,0,0,.2);
-    text-align:center;
-}
+        .livros{
+            display:grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap:10px;
+            margin-top:10px;
+        }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:10px;
-}
-</style>
+        .livro{
+            background:#2b2b2b;
+            padding:10px;
+            border-radius:10px;
+            text-align:center;
+        }
 
-<script>
-function toggleContent(id){
-  const el = document.getElementById(id);
-  el.style.display = (el.style.display === "block") ? "none" : "block";
-}
-</script>
+        img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:10px;
+        }
 
+        a{
+            color:#00c3ff;
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- ======================= LEI DA ATRAÇÃO ======================= -->
+<h1>📚 Biblioteca Digital</h1>
 
-<div class="category" onclick="toggleContent('atracao')">
-✨ LEI DA ATRAÇÃO
+<!-- ================= LEI DA ATRAÇÃO ================= -->
+
+<div class="categoria">
+<h2>🧲 Lei da Atração</h2>
+
+<div class="autor">
+<h3>Rhonda Byrne</h3>
+<div class="livros">
+<div class="livro">1<br> <a href="#">LINK DO LIVRO</a></div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
 </div>
 
-<div id="atracao" class="content">
+<div class="autor">
+<h3>Neville Goddard</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-    <!-- Rhonda Byrne -->
-    <div class="subcategory" onclick="toggleContent('rhonda')">
-    ➤ Rhonda Byrne
-    </div>
+<div class="autor">
+<h3>Esther e Jerry Hicks</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-    <div id="rhonda" class="subcontent">
-        <div class="grid">
+<div class="autor">
+<h3>Joseph Murphy</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-            <div class="card"><img src="imagens/rhonda1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/rhonda2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/rhonda3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/rhonda4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/rhonda5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
-
-        </div>
-    </div>
-
-    <!-- Neville Goddard -->
-    <div class="subcategory" onclick="toggleContent('neville')">
-    ➤ Neville Goddard
-    </div>
-
-    <div id="neville" class="subcontent">
-        <div class="grid">
-
-            <div class="card"><img src="imagens/neville1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/neville2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/neville3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/neville4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/neville5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
-
-        </div>
-    </div>
-
-    <!-- Esther e Jerry Hicks -->
-    <div class="subcategory" onclick="toggleContent('hicks')">
-    ➤ Esther e Jerry Hicks
-    </div>
-
-    <div id="hicks" class="subcontent">
-        <div class="grid">
-
-            <div class="card"><img src="imagens/hicks1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/hicks2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/hicks3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/hicks4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/hicks5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
-
-        </div>
-    </div>
-
-    <!-- Joseph Murphy -->
-    <div class="subcategory" onclick="toggleContent('murphy')">
-    ➤ Joseph Murphy
-    </div>
-
-    <div id="murphy" class="subcontent">
-        <div class="grid">
-
-            <div class="card"><img src="imagens/murphy1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/murphy2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/murphy3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/murphy4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/murphy5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
-
-        </div>
-    </div>
-
-    <!-- Deepak Chopra -->
-    <div class="subcategory" onclick="toggleContent('chopra')">
-    ➤ Deepak Chopra
-    </div>
-
-    <div id="chopra" class="subcontent">
-        <div class="grid">
-
-            <div class="card"><img src="imagens/chopra1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/chopra2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/chopra3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/chopra4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
-            <div class="card"><img src="imagens/chopra5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
-
-        </div>
-    </div>
+<div class="autor">
+<h3>Deepak Chopra</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
 </div>
 
-<!-- ======================= ROMANCE ======================= -->
+<!-- ================= ROMANCES ================= -->
 
-<div class="category" onclick="toggleContent('romance')">
-❤️ ROMANCES
+<div class="categoria">
+<h2>❤️ Romances</h2>
+
+<div class="autor">
+<h3>Rebecca Yarros</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
 </div>
 
-<div id="romance" class="content">
+<div class="autor">
+<h3>Colleen Hoover</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-    <!-- Rebecca Yarros -->
-    <div class="subcategory" onclick="toggleContent('yarros')">➤ Rebecca Yarros</div>
-    <div id="yarros" class="subcontent">
-        <div class="grid">
+<div class="autor">
+<h3>Emily Henry</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-            <div class="card"><img src="imagens/yarros1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/yarros2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/yarros3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/yarros4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/yarros5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+<div class="autor">
+<h3>Christina Lauren</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-        </div>
-    </div>
+<div class="autor">
+<h3>Verity</h3>
+<div class="livros">
+<div class="livro">1</div>
+<div class="livro">2</div>
+<div class="livro">3</div>
+<div class="livro">4</div>
+<div class="livro">5</div>
+</div>
+</div>
 
-    <!-- Colleen Hoover -->
-    <div class="subcategory" onclick="toggleContent('colleen')">➤ Colleen Hoover</div>
-    <div id="colleen" class="subcontent">
-        <div class="grid">
+</div>
 
-            <div class="card"><img src="imagens/coho1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/coho2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/coho3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/coho4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
-            <div class="card"><img src="imagens/coho5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+<!-- ================= EDUCAÇÃO ================= -->
 
-        </div>
-    </div>
+<div class="categoria">
+<h2>🎓 Educação</h2>
+
+<div class="tituloSimples">Desenhos para colorir</div>
+<div class="tituloSimples">Alfabeto Divertido</div>
+<div class="tituloSimples">Conhecendo as Vogais</div>
+<div class="tituloSimples">500 Desenhos para imprimir</div>
+<div class="tituloSimples">Acesso ao Canal</div>
+
+</div>
+
+<!-- ================= COLEÇÕES ================= -->
+
+<div class="categoria">
+<h2>📚 Coleção</h2>
+
+<div class="autor">
+<h3>Carina Rissi</h3>
+<div class="livros">
+<div class="livro">Coleção 1</div>
+<div class="livro">Coleção 2</div>
+<div class="livro">Coleção 3</div>
+<div class="livro">Coleção 4</div>
+<div class="livro">Coleção 5</div>
+</div>
+</div>
+
+<div class="autor">
+<h3>Colleen Hoover</h3>
+<div class="livros">
+<div class="livro">Coleção 1</div>
+<div class="livro">Coleção 2</div>
+<div class="livro">Coleção 3</div>
+<div class="livro">Coleção 4</div>
+<div class="livro">Coleção 5</div>
+</div>
+</div>
+
+<div class="autor">
+<h3>Anne Jacobs</h3>
+<div class="livros">
+<div class="livro">Coleção 1</div>
+<div class="livro">Coleção 2</div>
+<div class="livro">Coleção 3</div>
+<div class="livro">Coleção 4</div>
+<div class="livro">Coleção 5</div>
+</div>
+</div>
+
+<div class="autor">
+<h3>Jane Austen</h3>
+<div class="livros">
+<div class="livro">Coleção 1</div>
+<div class="livro">Coleção 2</div>
+<div class="livro">Coleção 3</div>
+<div class="livro">Coleção 4</div>
+<div class="livro">Coleção 5</div>
+</div>
+</div>
+
+<div class="autor">
+<h3>Kiera Cass</h3>
+<div class="livros">
+<div class="livro">Coleção 1</div>
+<div class="livro">Coleção 2</div>
+<div class="livro">Coleção 3</div>
+<div class="livro">Coleção 4</div>
+<div class="livro">Coleção 5</div>
+</div>
+</div>
 
 </div>
 
