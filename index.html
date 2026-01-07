@@ -1,115 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<title>LIVROS EM PDF PARA BAIXAR</title>
-
-<style>
-body{
-    font-family: Arial;
-    background:#f4f4f4;
-    margin:0;
-}
-
-header{
-    background:red;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-.container{
-    width:90%;
-    margin:auto;
-}
-
-/* categoria principal */
-.category{
-    background:#222;
-    color:white;
-    padding:12px;
-    margin-top:15px;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:18px;
-}
-
-/* conteúdo da categoria */
-.content{
-    display:none;
-    padding:10px;
-}
-
-/* subcategoria (autor) */
-.subcategory{
-    background:#555;
-    color:white;
-    padding:10px;
-    margin:8px 0;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:15px;
-}
-
-/* conteúdo da subcategoria */
-.subcontent{
-    display:none;
-    padding:10px;
-    background:#eaeaea;
-    border-radius:6px;
-}
-
-/* grade */
-.grid{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:12px;
-}
-
-/* card do livro */
-.card{
-    background:white;
-    padding:10px;
-    border-radius:8px;
-    text-align:center;
-    box-shadow:0 0 5px rgba(0,0,0,0.2);
-}
-
-.card img{
-    width:100%;
-    height:170px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-button{
-    padding:8px 10px;
-    border:none;
-    background:green;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
-}
-</style>
-
-<script>
-function toggleContent(id){
-    let area = document.getElementById(id);
-    area.style.display = (area.style.display === "none") ? "block" : "none";
-}
-</script>
-
-</head>
-
-<body>
-
-<header>
-<h1>LIVROS EM PDF PARA BAIXAR</h1>
-<p>Coloque aqui a descrição do site</p>
-</header>
-
-<div class="container">
-
 <!-- ======================= LEI DA ATRAÇÃO ======================= -->
 
 <div class="category" onclick="toggleContent('atracao')">
@@ -126,81 +14,15 @@ function toggleContent(id){
     <div id="rhonda" class="subcontent">
         <div class="grid">
 
-            <!-- 10 ESPAÇOS DE LIVROS -->
-
-            <!-- 1 -->
-            <div class="card">
-                <img src="imagens/rhonda1.jpg">
-                <p>Título do livro 1</p>
-                <button onclick="window.location.href='LINK1'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 2 -->
-            <div class="card">
-                <img src="imagens/rhonda2.jpg">
-                <p>Título do livro 2</p>
-                <button onclick="window.location.href='LINK2'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 3 -->
-            <div class="card">
-                <img src="imagens/rhonda3.jpg">
-                <p>Título do livro 3</p>
-                <button onclick="window.location.href='LINK3'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 4 -->
-            <div class="card">
-                <img src="imagens/rhonda4.jpg">
-                <p>Título do livro 4</p>
-                <button onclick="window.location.href='LINK4'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 5 -->
-            <div class="card">
-                <img src="imagens/rhonda5.jpg">
-                <p>Título do livro 5</p>
-                <button onclick="window.location.href='LINK5'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 6 -->
-            <div class="card">
-                <img src="imagens/rhonda6.jpg">
-                <p>Título do livro 6</p>
-                <button onclick="window.location.href='LINK6'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 7 -->
-            <div class="card">
-                <img src="imagens/rhonda7.jpg">
-                <p>Título do livro 7</p>
-                <button onclick="window.location.href='LINK7'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 8 -->
-            <div class="card">
-                <img src="imagens/rhonda8.jpg">
-                <p>Título do livro 8</p>
-                <button onclick="window.location.href='LINK8'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 9 -->
-            <div class="card">
-                <img src="imagens/rhonda9.jpg">
-                <p>Título do livro 9</p>
-                <button onclick="window.location.href='LINK9'">Baixar / Comprar</button>
-            </div>
-
-            <!-- 10 -->
-            <div class="card">
-                <img src="imagens/rhonda10.jpg">
-                <p>Título do livro 10</p>
-                <button onclick="window.location.href='LINK10'">Baixar / Comprar</button>
-            </div>
+            <!-- 5 LIVROS -->
+            <div class="card"><img src="imagens/rhonda1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/rhonda2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/rhonda3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/rhonda4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/rhonda5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
 
         </div>
     </div>
-
 
     <!-- Neville Goddard -->
     <div class="subcategory" onclick="toggleContent('neville')">
@@ -209,77 +31,193 @@ function toggleContent(id){
 
     <div id="neville" class="subcontent">
         <div class="grid">
+            <div class="card"><img src="imagens/neville1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/neville2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/neville3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/neville4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/neville5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
+        </div>
+    </div>
 
-            <!-- COPIE ESTES 10 PARA OUTROS AUTORES TAMBÉM (ESTÃO PRONTOS) -->
+    <!-- Esther e Jerry Hicks -->
+    <div class="subcategory" onclick="toggleContent('hicks')">
+    ➤ Esther e Jerry Hicks
+    </div>
 
-            <div class="card">
-                <img src="imagens/neville1.jpg">
-                <p>Título do livro 1</p>
-                <button>Baixar / Comprar</button>
-            </div>
+    <div id="hicks" class="subcontent">
+        <div class="grid">
+            <div class="card"><img src="imagens/hicks1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/hicks2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/hicks3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/hicks4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/hicks5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
+        </div>
+    </div>
 
-            <div class="card">
-                <img src="imagens/neville2.jpg">
-                <p>Título do livro 2</p>
-                <button>Baixar / Comprar</button>
-            </div>
+    <!-- Joseph Murphy -->
+    <div class="subcategory" onclick="toggleContent('murphy')">
+    ➤ Joseph Murphy
+    </div>
 
-            <div class="card">
-                <img src="imagens/neville3.jpg">
-                <p>Título do livro 3</p>
-                <button>Baixar / Comprar</button>
-            </div>
+    <div id="murphy" class="subcontent">
+        <div class="grid">
+            <div class="card"><img src="imagens/murphy1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/murphy2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/murphy3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/murphy4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/murphy5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
+        </div>
+    </div>
 
-            <div class="card">
-                <img src="imagens/neville4.jpg">
-                <p>Título do livro 4</p>
-                <button>Baixar / Comprar</button>
-            </div>
+    <!-- Deepak Chopra -->
+    <div class="subcategory" onclick="toggleContent('chopra')">
+    ➤ Deepak Chopra
+    </div>
 
-            <div class="card">
-                <img src="imagens/neville5.jpg">
-                <p>Título do livro 5</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="imagens/neville6.jpg">
-                <p>Título do livro 6</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="imagens/neville7.jpg">
-                <p>Título do livro 7</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="imagens/neville8.jpg">
-                <p>Título do livro 8</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="imagens/neville9.jpg">
-                <p>Título do livro 9</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="imagens/neville10.jpg">
-                <p>Título do livro 10</p>
-                <button>Baixar / Comprar</button>
-            </div>
-
+    <div id="chopra" class="subcontent">
+        <div class="grid">
+            <div class="card"><img src="imagens/chopra1.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK1'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/chopra2.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK2'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/chopra3.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK3'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/chopra4.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK4'">Baixar / Comprar</button></div>
+            <div class="card"><img src="imagens/chopra5.jpg"><p>Título do livro</p><button onclick="window.location.href='LINK5'">Baixar / Comprar</button></div>
         </div>
     </div>
 
 </div>
 
-<!-- repita mesma lógica para Romance, Ficção, Trilogias, Didáticos -->
+<!-- ======================= ROMANCE ======================= -->
+
+<div class="category" onclick="toggleContent('romance')">
+❤️ ROMANCES
+</div>
+
+<div id="romance" class="content">
+
+    <!-- Rebecca Yarros -->
+    <div class="subcategory" onclick="toggleContent('yarros')">➤ Rebecca Yarros</div>
+    <div id="yarros" class="subcontent"><div class="grid">
+        <div class="card"><img src="imagens/yarros1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/yarros2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/yarros3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/yarros4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/yarros5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+    </div></div>
+
+    <!-- Colleen Hoover -->
+    <div class="subcategory" onclick="toggleContent('colleen')">➤ Colleen Hoover</div>
+    <div id="colleen" class="subcontent"><div class="grid">
+        <div class="card"><img src="imagens/coho1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/coho2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/coho3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/coho4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/coho5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+    </div></div>
+
+    <!-- Emily Henry -->
+    <div class="subcategory" onclick="toggleContent('emily')">➤ Emily Henry</div>
+    <div id="emily" class="subcontent"><div class="grid">
+        <div class="card"><img src="imagens/emily1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/emily2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/emily3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/emily4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/emily5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+    </div></div>
+
+    <!-- Christina Lauren -->
+    <div class="subcategory" onclick="toggleContent('lauren')">➤ Christina Lauren</div>
+    <div id="lauren" class="subcontent"><div class="grid">
+        <div class="card"><img src="imagens/lauren1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/lauren2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/lauren3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/lauren4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/lauren5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+    </div></div>
+
+    <!-- Verity -->
+    <div class="subcategory" onclick="toggleContent('verity')">➤ Verity</div>
+    <div id="verity" class="subcontent"><div class="grid">
+        <div class="card"><img src="imagens/verity1.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/verity2.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/verity3.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/verity4.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+        <div class="card"><img src="imagens/verity5.jpg"><p>Título</p><button onclick="window.location.href='LINK'">Baixar</button></div>
+    </div></div>
 
 </div>
 
-</body>
-</html>
+<!-- ======================= EDUCAÇÃO ======================= -->
+
+<div class="category" onclick="toggleContent('educacao')">
+📚 Didáticos / Educação
+</div>
+
+<div id="educacao" class="content">
+    <div class="grid">
+        <div class="card"><p>Desenhos para Colorir</p><button onclick="window.location.href='LINK1'">Acessar</button></div>
+        <div class="card"><p>Alfabeto Divertido</p><button onclick="window.location.href='LINK2'">Acessar</button></div>
+        <div class="card"><p>Conhecendo as Vogais</p><button onclick="window.location.href='LINK3'">Acessar</button></div>
+        <div class="card"><p>500 Desenhos para Imprimir</p><button onclick="window.location.href='LINK4'">Acessar</button></div>
+        <div class="card"><p>Acesso ao Canal</p><button onclick="window.location.href='LINK5'">Acessar</button></div>
+    </div>
+</div>
+
+<!-- ======================= COLEÇÕES ======================= -->
+
+<div class="category" onclick="toggleContent('colecoes')">
+📦 COLEÇÕES
+</div>
+
+<div id="colecoes" class="content">
+
+    <!-- Carina Rissi -->
+    <div class="subcategory" onclick="toggleContent('carina')">➤ Carina Rissi</div>
+    <div id="carina" class="subcontent"><div class="grid">
+        <div class="card"><p>Coleção 1</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 2</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 3</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 4</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 5</p><button onclick="window.location.href='LINK'">Ver</button></div>
+    </div></div>
+
+    <!-- Colleen Hoover -->
+    <div class="subcategory" onclick="toggleContent('cohoColecao')">➤ Colleen Hoover</div>
+    <div id="cohoColecao" class="subcontent"><div class="grid">
+        <div class="card"><p>Coleção 1</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 2</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 3</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 4</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 5</p><button onclick="window.location.href='LINK'">Ver</button></div>
+    </div></div>
+
+    <!-- Anne Jacobs -->
+    <div class="subcategory" onclick="toggleContent('jacobs')">➤ Anne Jacobs</div>
+    <div id="jacobs" class="subcontent"><div class="grid">
+        <div class="card"><p>Coleção 1</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 2</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 3</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 4</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 5</p><button onclick="window.location.href='LINK'">Ver</button></div>
+    </div></div>
+
+    <!-- Jane Austen -->
+    <div class="subcategory" onclick="toggleContent('austen')">➤ Jane Austen</div>
+    <div id="austen" class="subcontent"><div class="grid">
+        <div class="card"><p>Coleção 1</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 2</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 3</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 4</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 5</p><button onclick="window.location.href='LINK'">Ver</button></div>
+    </div></div>
+
+    <!-- Kiera Cass -->
+    <div class="subcategory" onclick="toggleContent('kiera')">➤ Kiera Cass</div>
+    <div id="kiera" class="subcontent"><div class="grid">
+        <div class="card"><p>Coleção 1</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 2</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 3</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class "card"><p>Coleção 4</p><button onclick="window.location.href='LINK'">Ver</button></div>
+        <div class="card"><p>Coleção 5</p><button onclick="window.location.href='LINK'">Ver</button></div>
+    </div></div>
+
+</div>
