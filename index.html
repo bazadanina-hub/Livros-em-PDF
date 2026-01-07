@@ -1,116 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Virtual – Telegram</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividades Pedagógicas</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<style>
 
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="estilo.css">
-  
-  <style>
-    /* vídeo responsivo e grande */
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding-bottom: 56.25%;
-    }
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
 
-    .video-wrapper iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border-radius: 16px;
-    }
-  </style>
+    /* plano de fundo infantil */
+    background: linear-gradient(135deg,#a8e8ff,#ffd6f6,#fff3b0);
+    background-attachment: fixed;
+}
+
+/* container principal */
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align:center;
+}
+
+/* título principal */
+h1{
+    font-size: 26px;
+    margin-bottom:5px;
+}
+
+/* subtítulo */
+h2{
+    font-size:18px;
+    color:#444;
+}
+
+/* grade das apostilas */
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+/* cada card */
+.card{
+    background:white;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+/* imagens */
+.card img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* botão acessar */
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#ff7ac4;
+    padding:10px;
+    color:white;
+    font-weight:bold;
+    border-radius:20px;
+    margin-top:8px;
+}
+
+</style>
+
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <header class="w-full text-center py-16" style="background-color: #229ED9;">
-    <h1 class="text-5xl font-bold text-white drop-shadow-lg">
-      BIBLIOTECA VIRTUAL – TELEGRAM
-    </h1>
+<div class="container">
 
-    <p class="text-xl text-white opacity-90 mt-4">
-      PDFs exclusivos para seu crescimento pessoal e profissional
-    </p>
-  </header>
+<h1>ATIVIDADES PEDAGÓGICAS</h1>
+<h2>Atividades para imprimir</h2>
 
-  <!-- VÍDEO -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <div class="video-wrapper">
-      <iframe 
-        src="https://www.youtube.com/embed/Cz1SpDf25R8"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+<div class="cards">
 
-  <!-- LIVROS -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-center text-3xl font-bold">
-      📚 Livros em Destaque
-    </h2>
+<!-- 1 -->
+<div class="card">
+<img src="imagens/Folclore.jpg">
+<p>Atividades Folclóricas</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+<!-- 2 -->
+<div class="card">
+<img src="imagens/arvore.jpg">
+<p>Dia da Árvore</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-      <!-- CARD 01 -->
-      <div class="rounded-xl shadow-lg p-5 bg-white">
-        <img src="ativos/romance.png" class="rounded-lg shadow w-full" alt="romance">
-        <h3 class="text-xl font-bold mt-4">Romance</h3>
-        <p class="text-red-600 text-2xl font-extrabold">R$ 4,99</p>
+<!-- 3 -->
+<div class="card">
+<img src="imagens/animais.jpg">
+<p>Animais Diversos</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-        <a href="https://app.monetizze.com.br/checkout/DNR365646"
-           target="_blank"
-           class="w-full text-center block bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold mt-4">
-          Acessar Agora
-        </a>
-      </div>
+<!-- 4 -->
+<div class="card">
+<img src="imagens/meninos.jpg">
+<p>Meninos – Diversos</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-      <!-- CARD 02 -->
-      <div class="rounded-xl shadow-lg p-5 bg-white">
-        <img src="ativos/maisvendidos.png" class="rounded-lg shadow w-full" alt="Mais Vendidos">
-        <h3 class="text-xl font-bold mt-4">Lei da Atração</h3>
-        <p class="text-red-600 text-2xl font-extrabold">R$ 4,99</p>
+<!-- 5 -->
+<div class="card">
+<img src="imagens/meninas.jpg">
+<p>Meninas – Diversos</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-        <a href="https://app.monetizze.com.br/checkout/DNR365646"
-           target="_blank"
-           class="w-full text-center block bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold mt-4">
-          Acessar Agora
-        </a>
-      </div>
+<!-- 6 -->
+<div class="card">
+<img src="imagens/meninos-meninas.jpg">
+<p>Menino e Menina</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-      <!-- CARD 03 -->
-      <div class="rounded-xl shadow-lg p-5 bg-white">
-        <img src="ativos/melhores.png" class="rounded-lg shadow w-full" alt="Melhores Livros">
-        <h3 class="text-xl font-bold mt-4">Muito Mais</h3>
-        <p class="text-red-600 text-2xl font-extrabold">R$ 4,99</p>
+<!-- 7 -->
+<div class="card">
+<img src="imagens/haloween.jpg">
+<p>Desenhos Halloween</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-        <a href="https://app.monetizze.com.br/checkout/DNR365646"
-           target="_blank"
-           class="w-full text-center block bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold mt-4">
-          Acessar Agora
-        </a>
-      </div>
+<!-- 8 -->
+<div class="card">
+<img src="imagens/natal.jpg">
+<p>Desenhos Natalinos</p>
+<a class="btn" href="https://pay.monetizze.com.br/KTM452734">Acessar</a>
+</div>
 
-    </div>
-  </section>
+<!-- 9 -->
+<div class="card">
+<img src="imagens/todos-kits.jpg">
+<p>Quero todos os kits</p>
+<a class="btn" href="#">Acessar</a>
+</div>
 
-  <!-- RODAPÉ -->
-  <footer class="text-center py-8">
-    <p class="text-gray-600 text-sm">© 2024 – Todos os direitos reservados</p>
-  </footer>
+<!-- 10 -->
+<div class="card">
+<img src="imagens/vogais.jpg">
+<p>Conhecendo as Vogais</p>
+<a class="btn" href="https://pay.monetizze.com.br/KHP449136" target="_blank">
+Acesse agora
+</a>
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
