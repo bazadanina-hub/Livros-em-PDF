@@ -9,8 +9,8 @@ body{
     font-family: Arial;
     background:#f4f4f4;
     margin:0;
-    padding:0;
 }
+
 header{
     background:red;
     color:white;
@@ -19,25 +19,54 @@ header{
 }
 
 .container{
-    width: 90%;
+    width:90%;
     margin:auto;
 }
 
-/* título categoria */
-h2{
+/* categoria principal */
+.category{
     background:#222;
     color:white;
+    padding:12px;
+    margin-top:15px;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:18px;
+}
+
+/* conteúdo da categoria */
+.content{
+    display:none;
     padding:10px;
 }
 
-/* grade dos livros */
-.grid{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-    gap:15px;
+/* subtítulo (subcategoria) */
+.subcategory{
+    background:#555;
+    color:white;
+    padding:10px;
+    margin:8px 0;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:15px;
 }
 
-/* card do livro */
+/* conteúdo da subcategoria */
+.subcontent{
+    display:none;
+    padding:10px;
+    background:#eaeaea;
+    border-radius:6px;
+}
+
+/* grade de livros */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:12px;
+}
+
+/* card */
 .card{
     background:white;
     padding:10px;
@@ -63,138 +92,200 @@ button{
 }
 </style>
 
+<script>
+function toggleContent(id){
+    let x = document.getElementById(id);
+    x.style.display = x.style.display === "none" ? "block" : "none";
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>LIVROS EM PDF PARA BAIXAR</h1>
-<p>Coloque aqui sua descrição do site, explicando como funciona o acesso aos livros.</p>
+<p>Coloque aqui a descrição do site</p>
 </header>
 
 <div class="container">
 
-<!-- =========================
-      LEI DA ATRAÇÃO
-========================= -->
 
-<h2>✨ LEI DA ATRAÇÃO</h2>
+<!-- ================= LEI DA ATRAÇÃO ================= -->
 
-<div class="grid">
-
-<!-- repita trocando imagem e título -->
-
-<div class="card">
-<img src="imagens/lei1.jpg">
-<p>Título do Livro</p>
-<button>Baixar / Comprar</button>
+<div class="category" onclick="toggleContent('atracao')">
+✨ LEI DA ATRAÇÃO
 </div>
 
-<!-- copie e cole esse card e edite -->
-<!-- coloque quantos livros quiser -->
-
-<!-- CARD ESPECIAL -->
-<div class="card">
-<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
-<button>CLIQUE AQUI</button>
-</div>
-
-</div>
+<div id="atracao" class="content">
 
 
+    <!-- subcategoria 1 -->
+    <div class="subcategory" onclick="toggleContent('rhonda')">
+    ➤ Rhonda Byrne
+    </div>
 
-<!-- =========================
-      ROMANCE
-========================= -->
+    <div id="rhonda" class="subcontent">
+        <div class="grid">
 
-<h2>❤️ ROMANCE</h2>
+            <div class="card">
+            <img src="imagens/rhonda1.jpg">
+            <p>Título do Livro</p>
+            <button>Baixar / Comprar</button>
+            </div>
 
-<div class="grid">
+            <div class="card">
+            <p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
+            <button>CLIQUE AQUI</button>
+            </div>
 
-<div class="card">
-<img src="imagens/romance1.jpg">
-<p>Título do Romance</p>
-<button>Baixar / Comprar</button>
-</div>
-
-<!-- copie e cole mais cards aqui -->
-
-<div class="card">
-<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
-<button>CLIQUE AQUI</button>
-</div>
-
-</div>
+        </div>
+    </div>
 
 
+    <!-- subcategoria 2 -->
+    <div class="subcategory" onclick="toggleContent('neville')">
+    ➤ Neville Goddard
+    </div>
 
-<!-- =========================
-      FICÇÃO
-========================= -->
+    <div id="neville" class="subcontent">
+        <div class="grid">
 
-<h2>🌙 FICÇÃO</h2>
+            <div class="card">
+            <img src="imagens/neville1.jpg">
+            <p>Título do Livro</p>
+            <button>Baixar / Comprar</button>
+            </div>
 
-<div class="grid">
-
-<div class="card">
-<img src="imagens/ficcao1.jpg">
-<p>Título do Livro</p>
-<button>Baixar / Comprar</button>
-</div>
-
-<div class="card">
-<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
-<button>CLIQUE AQUI</button>
-</div>
+        </div>
+    </div>
 
 </div>
 
 
 
-<!-- =========================
-      TRILOGIAS
-========================= -->
 
-<h2>📚 TRILOGIAS</h2>
 
-<div class="grid">
+<!-- ================= ROMANCE ================= -->
 
-<div class="card">
-<img src="imagens/trilogia1.jpg">
-<p>Nome da Trilogia</p>
-<button>Baixar / Comprar</button>
+<div class="category" onclick="toggleContent('romance')">
+❤️ ROMANCE
 </div>
 
-<div class="card">
-<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
-<button>CLIQUE AQUI</button>
-</div>
+<div id="romance" class="content">
 
-</div>
+    <div class="subcategory" onclick="toggleContent('romance_adol')">
+    ➤ Romance Adolescente
+    </div>
 
+    <div id="romance_adol" class="subcontent">
 
+        <div class="grid">
 
-<!-- =========================
-      DIDÁTICOS / EDUCAÇÃO
-========================= -->
+            <div class="card">
+            <img src="imagens/romance1.jpg">
+            <p>Título do Romance</p>
+            <button>Baixar / Comprar</button>
+            </div>
 
-<h2>📘 DIDÁTICOS / EDUCAÇÃO</h2>
+        </div>
 
-<div class="grid">
-
-<div class="card">
-<img src="imagens/educacao1.jpg">
-<p>Título do Material</p>
-<button>Baixar / Comprar</button>
-</div>
-
-<div class="card">
-<p><strong>QUERO ACESSO A TODA BIBLIOTECA</strong></p>
-<button>CLIQUE AQUI</button>
-</div>
+    </div>
 
 </div>
 
+
+
+
+<!-- ================= FICÇÃO ================= -->
+
+<div class="category" onclick="toggleContent('ficcao')">
+🌙 FICÇÃO
+</div>
+
+<div id="ficcao" class="content">
+
+    <div class="subcategory" onclick="toggleContent('ficcao_geral')">
+    ➤ Ficção Geral
+    </div>
+
+    <div id="ficcao_geral" class="subcontent">
+
+        <div class="grid">
+
+            <div class="card">
+            <img src="imagens/ficcao1.jpg">
+            <p>Título do Livro</p>
+            <button>Baixar / Comprar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- ================= TRILOGIAS ================= -->
+
+<div class="category" onclick="toggleContent('trilogias')">
+📚 TRILOGIAS
+</div>
+
+<div id="trilogias" class="content">
+
+    <div class="subcategory" onclick="toggleContent('trilogias_geral')">
+    ➤ Trilogias completas
+    </div>
+
+    <div id="trilogias_geral" class="subcontent">
+
+        <div class="grid">
+
+            <div class="card">
+            <img src="imagens/trilogia1.jpg">
+            <p>Nome da trilogia</p>
+            <button>Baixar / Comprar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- ================= DIDÁTICOS ================= -->
+
+<div class="category" onclick="toggleContent('educacao')">
+📘 DIDÁTICOS / EDUCAÇÃO
+</div>
+
+<div id="educacao" class="content">
+
+    <div class="subcategory" onclick="toggleContent('alfabetizacao')">
+    ➤ Alfabetização
+    </div>
+
+    <div id="alfabetizacao" class="subcontent">
+
+        <div class="grid">
+
+            <div class="card">
+            <img src="imagens/edu1.jpg">
+            <p>Material didático</p>
+            <button>Baixar / Comprar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </div>
 
